@@ -15,4 +15,5 @@ text_box.send_keys("Selenium")
 submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
 submit_button.click()
 
-sleep(5)
+message = driver.find_element(by=By.ID, value="message")
+print('Mensagem Final:', message.text)
